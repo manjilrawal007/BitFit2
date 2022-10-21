@@ -1,0 +1,111 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.manjilrawal.BitFit.DashboardFragment"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/maximum_calorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maximum Calories:"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/maximum_calorieTV"
+            app:layout_constraintEnd_toStartOf="@+id/maximum_calorieTV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/maximum_calorieTV" />
+
+        <TextView
+            android:id="@+id/average_caloriesTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="80dp"
+            android:text="999"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/minimum_calorieTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="80dp"
+            android:text="888"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/average_caloriesTV" />
+
+        <TextView
+            android:id="@+id/maximum_calorieTV"
+            android:layout_width="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="80dp"
+            android:text="777"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/minimum_calorieTV" />
+
+        <Button
+            android:id="@+id/clear_dataBT"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="80dp"
+            android:background="#F69273"
+            android:text="Clear Data"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/maximum_calorieTV"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/Average_tv"
+            android:layout_width="195dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="47dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="12dp"
+            android:text="Average Calories:"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/minimum_tv"
+            app:layout_constraintEnd_toStartOf="@+id/average_caloriesTV"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/minimum_tv"
+            android:layout_width="198dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="47dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="22dp"
+            android:text="Minimum Calories:"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/maximum_calorie"
+            app:layout_constraintEnd_toStartOf="@+id/minimum_calorieTV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Average_tv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
